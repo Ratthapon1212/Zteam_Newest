@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Zteam.Models.Game>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No data available.</p>
+}
+else
+{
+    <div class="container">
+        <h2>Items</h2>
+        <div class="row">
+            @foreach (var game in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <img src="https://picsum.photos/20/10" class="card-img-top" alt="Image">
+                            <h3 class="card-title">@game.GameName</h3>
+                            <p class="card-text">@game.GameInfo</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <!-- You can add buttons or other actions here -->
+                                </div>
+                                <small class="text-muted">ID: @game.GameId</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
