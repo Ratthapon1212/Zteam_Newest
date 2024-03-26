@@ -12,8 +12,8 @@ using Zteam.Data;
 namespace Zteam.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240323161500_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20240326113426_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

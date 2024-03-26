@@ -14,12 +14,12 @@ namespace Zteam.Models
         [Range(0, float.MaxValue, ErrorMessage = "ราคาต้องไม่น้อยกว่า 0")]
         public float Price { get; set; }
         public byte[]? GameImage { get; set; }
-        public int DeveloperId { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public string Rating { get; set; }
+        public int? DeveloperId { get; set; }
+        public DateTime? ReleaseDate { get; set; }
+        public string? Rating { get; set; }
 
         public List<Genre>? Genre { get; set; }
-        public Developer Developer { get; set; }
+        public Developer? Developer { get; set; }
 
     }
 }

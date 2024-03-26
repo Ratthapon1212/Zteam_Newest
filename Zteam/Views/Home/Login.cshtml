@@ -10,14 +10,14 @@
 @if (HttpContextAccessor.HttpContext.Session.GetString("CusId") == null)
 {
     <div class="text-center" >
-        <div class="display-4">KuShop</div>
+        <div class="display-4">Zteam</div>
 
         <form asp-controller="Home" asp-action="login" method="post">
             <div class=" row justify-content-center m-3">
                 <div class="col-lg-4">
                     <div class="input-group">
                         <div class="input-group-text"><i class="bi bi-person-circle"></i></div>
-                        <input type="text" name="userName" class="form-control" required />
+                        <input type="text" placeholder="UserName" name="userName" class="form-control" required />
                     </div>
                 </div>
             </div>
@@ -25,13 +25,15 @@
                 <div class="col-lg-4">
                     <div class="input-group">
                         <div class="input-group-text"><i class="bi bi-unlock-fill"></i></div>
-                        <input type="password" name="userPass" class="form-control" required />
+                        <input type="password" placeholder="Password" name="userPass" class="form-control" required />
                     </div>
                 </div>
             </div>
             <div class=" row justify-content-center m-0">
                 <div class="col-lg-2">
-                    <button type="button" class="btn btn-link" href="/Home/SignUp">สมัครใช้งาน</button>
+                    <button type="button" class="btn btn-link">สมัครใช้งาน
+                            <a class= href="/Home/SignUp"></a>
+                        </button>
                 </div>
                 <div class="col-lg-2">
                     <button type="submit" class="btn btn-primary">Login</button>
