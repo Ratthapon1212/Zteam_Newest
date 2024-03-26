@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Zteam.Data;
 using Zteam.Models;
+using static Azure.Core.HttpHeader;
 
 namespace Zteam.Controllers
 {
@@ -16,5 +17,22 @@ namespace Zteam.Controllers
             IEnumerable<Game> game = _db.Game;
             return View(game);
         }
+        public IActionResult GameDetail(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Game game = _db.Game.FirstOrDefault(g => g.GameId == id);
+
+            if (game == null)
+            {
+                return NotFound();
+            }
+
+            return View(game);
+        }
     }
+
 }
