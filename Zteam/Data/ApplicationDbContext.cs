@@ -16,8 +16,8 @@ namespace Zteam.Data
         public DbSet<Buying> Buyings { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartDtl> CartDtls { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Duty> Duties { get; set; }
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Duty> Duty { get; set; }
         public DbSet<Staff> Staff { get; set; }
     }
 
