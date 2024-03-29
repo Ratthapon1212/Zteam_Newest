@@ -282,7 +282,7 @@ namespace Zteam.Migrations
 
                     b.HasKey("StfId");
 
-                    b.ToTable("Staffs");
+                    b.ToTable("Staff");
                 });
 
             modelBuilder.Entity("GameGenre", b =>

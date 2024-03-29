@@ -18,7 +18,7 @@ namespace Zteam.Data
         public DbSet<CartDtl> CartDtls { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Duty> Duties { get; set; }
-        public DbSet<Staff> Staffs { get; set; }
+        public DbSet<Staff> Staff { get; set; }
     }
 
 }

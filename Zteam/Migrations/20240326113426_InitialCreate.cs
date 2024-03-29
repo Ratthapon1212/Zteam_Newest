@@ -131,7 +131,7 @@ namespace Zteam.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Staffs",
+                name: "Staff",
                 columns: table => new
                 {
                     StfId = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -231,7 +231,7 @@ namespace Zteam.Migrations
                 name: "GameGenre");
 
             migrationBuilder.DropTable(
-                name: "Staffs");
+                name: "Staff");
 
             migrationBuilder.DropTable(
                 name: "Game");
