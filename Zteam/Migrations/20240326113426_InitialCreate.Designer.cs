@@ -130,7 +130,7 @@ namespace Zteam.Migrations
                     b.Property<double?>("CdtlQty")
                         .HasColumnType("float");
 
-                    b.Property<string>("PdId")
+                    b.Property<string>("GameId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

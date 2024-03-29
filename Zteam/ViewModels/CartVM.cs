@@ -1,13 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Zteam.Models
+﻿namespace Zteam.ViewModels
 {
-    public class CartDtl
+    public class CartVM
     {
-        [Key]
         public string CartId { get; set; } = null!;
 
         public string GameId { get; set; } = null!;
+        public string GameName { get; set; }
 
         public double? CdtlQty { get; set; }
 
